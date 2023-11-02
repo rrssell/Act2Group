@@ -31,9 +31,7 @@ body {
   color: var(--text-color);
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   font-family: var(--title-font);
@@ -96,6 +94,16 @@ input {
   gap: 1.5rem;
 }
 
+/*=============== HEADER ===============*/
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background-color: transparent;
+}
+
 /*=============== NAV ===============*/
 .nav {
   height: var(--header-height);
@@ -104,8 +112,7 @@ input {
   align-items: center;
 }
 
-.nav__logo,
-.nav__toggle {
+.nav__logo, .nav__toggle {
   color: var(--white-color);
 }
 
@@ -132,7 +139,7 @@ input {
     height: 100%;
     box-shadow: -1px 0 4px rgba(14, 55, 63, 0.15);
     padding: 3rem;
-    transition: 0.4s;
+    transition: .4s;
   }
 }
 
@@ -154,7 +161,7 @@ input {
 
 .nav__close {
   position: absolute;
-  top: 0.75rem;
+  top: .75rem;
   right: 1rem;
   font-size: 1.5rem;
   color: var(--title-color);
@@ -183,12 +190,12 @@ input {
 }
 
 .active-link::before {
-  content: "";
+  content: '';
   position: absolute;
   background-color: var(--title-color);
   width: 100%;
   height: 2px;
-  bottom: -0.75rem;
+  bottom: -.75rem;
   left: 0;
 }
 
@@ -210,9 +217,9 @@ input {
   row-gap: 3rem;
 }
 
-.home__data-subtitle,
-.home__data-title,
-.home__social-link,
+.home__data-subtitle, 
+.home__data-title, 
+.home__social-link, 
 .home__info {
   color: var(--white-color);
 }
@@ -234,7 +241,7 @@ input {
   display: flex;
   padding: 1.5rem 1rem;
   align-items: center;
-  column-gap: 0.5rem;
+  column-gap: .5rem;
   position: absolute;
   right: 0;
   bottom: 1rem;
@@ -265,13 +272,14 @@ input {
   transform: var(--img-scale);
 }
 
+/*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--white-color);
   padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
-  transition: 0.3s;
+  transition: .3s;
 }
 
 .button:hover {
@@ -281,7 +289,7 @@ input {
 .button--flex {
   display: flex;
   align-items: center;
-  column-gap: 0.25rem;
+  column-gap: .25rem;
 }
 
 .button--link {
@@ -293,6 +301,7 @@ input {
   background: none;
 }
 
+/*=============== ABOUT ===============*/
 .about__data {
   text-align: center;
 }
@@ -325,15 +334,16 @@ input {
   width: 180px;
 }
 
-.about__img-one,
+.about__img-one, 
 .about__img-two {
   transition: var(--img-transition);
 }
 
-.about__img-one:hover,
+.about__img-one:hover, 
 .about__img-two:hover {
   transform: var(--img-scale);
 }
+
 /*=============== DISCOVER ===============*/
 .discover__card {
   position: relative;
